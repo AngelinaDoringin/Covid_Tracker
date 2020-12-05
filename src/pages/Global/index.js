@@ -1,10 +1,19 @@
-import React from "react";
+import React, {useEffect, useState} from 'react';
+import axios from "axios";
 
-const Global = () => {
-    return (
-        <div>
-            <h1>Global</h1>
-        </div>
-    );
+const Global = () =>{
+    const[users, setUsers] = useState([])
+
+    useEffect(() => {
+        axios
+         .get("https://covid19.mathdro.id/api")
+         .then((response) => setUsers(response.data));
+    }, []);
+    console.log(users);
+
+            return (
+                <p>Jumlah Kasus Seluruh Dunia</p>
+            );
 };
-export default Global; 
+
+export default Global;
