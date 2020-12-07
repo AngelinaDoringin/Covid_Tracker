@@ -37,7 +37,7 @@
   }
 }
 
-.test-container {
+.positif {
   text-align: center;
   border-width: 2px;
   border-color: black;
@@ -46,11 +46,10 @@
   margin: 10px;
   padding: 10;
   background-color: orange;
-  text-align: center ;
-  width: 270px;
+  width: 150px;
   height: 150px;
 }
-.test1-container {
+.sembuh {
   text-align: center;
   border-width: 2px;
   border-color: black;
@@ -59,11 +58,10 @@
   margin: 10px;
   padding: 10;
   background-color:greenyellow;
-  text-align: center ;
-  width: 270px;
+  width: 150px;
   height: 150px;
 }
-.test2-container {
+.meninggal {
   text-align: center;
   border-width: 2px;
   border-color: black;
@@ -72,8 +70,7 @@
   margin: 10px;
   padding: 10;
   background-color:red;
-  text-align: center ;
-  width: 270px;
+  width: 150px;
   height: 150px;
 
 }

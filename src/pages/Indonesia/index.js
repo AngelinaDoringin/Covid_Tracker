@@ -11,7 +11,7 @@ const Indonesia = () =>{
         axios
          .get("https://indonesia-covid-19.mathdro.id/api")
          .then((response) => {
-             setPstf(response.data.perawatan)
+             setPstf(response.data.jumlahKasus)
              setSem(response.data.sembuh)
              setMen(response.data.meninggal)
          });
@@ -20,29 +20,31 @@ const Indonesia = () =>{
 
 
     return (
-        
-    <div className="left">
-         <div className="test-container">
+    <div> 
+        <h3>Jumlah kasus di Indonesia</h3>
+        <div className="left">
+         <div className="positif">
              <h3>Positif
                 <p><CountUp start={0} end={con} delay={1.5} separator=",">
                      {({ countUpRef }) => (
                  <span ref={countUpRef} />)} 
                      </CountUp> </p></h3>
                      </div>
-                     <div className="test2-container">
+                     <div className="sembuh">
              <h3>Sembuh
                 <p><CountUp start={0} end={rec} delay={1.5} separator=",">
                      {({ countUpRef }) => (
                  <span ref={countUpRef} />)} 
                      </CountUp> </p></h3>
                      </div>
-                     <div className="test1-container">
+                     <div className="meninggal">
              <h3>Meninggal
                 <p><CountUp start={0} end={det} delay={1.5} separator=",">
                      {({ countUpRef }) => (
                  <span ref={countUpRef} />)} 
                      </CountUp> </p></h3>
                      </div>
+        </div>
     </div>
 
 
