@@ -78,4 +78,10 @@
 .left{
   display: flex;
   justify-content: left;
-} 
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
